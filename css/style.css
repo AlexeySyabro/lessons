@@ -1,0 +1,169 @@
+:root {
+    --black: #222222;
+    --light-pink: #F1E4E6;
+
+
+}
+
+.page {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0)
+}
+
+.header {
+    background-color: var(--black);
+}
+
+.header__nav {
+    display: none;
+}
+
+.header__wrp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 75px;
+}
+
+.header__logo {
+    margin: 0 41px 0 0;
+}
+
+.header__link {
+    margin: 0 0 0 31px;
+}
+
+.header__menu-btn {
+    border: none;
+    background-color: transparent;
+}
+
+.brand {
+    display: flex;
+}
+
+.brand__wrp {
+    background-color: var(--light-pink);
+    flex-grow: 1;
+    padding: 0 0 0 92px;
+    display: flex;
+    align-items: center;
+}
+
+.brand__title {
+    font-family: Lato;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 58px;
+    text-transform: uppercase;
+}
+
+.brand__subtitle {
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+}
+
+.brand__subtitle-pink {
+    font-family: 'Poppins', sans-serif;
+    color: pink;
+}
+
+.sales {
+    display: flex;
+}
+
+.sales__list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+.sales__item-title {
+    font-family: 'Cinzel', serif;
+    color: pink;
+}
+
+.sales__text {
+    font-family: 'Cinzel', serif;
+    font-size: 10px;
+}
+
+.hot {
+    display: flex;
+    flex-direction: column
+}
+
+.hot__caption {
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+
+}
+
+.hot__slogan {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    margin-top: 16px;
+    color: #9F9F9F;
+}
+
+.hot__list {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.hot__item-title {
+    font-family: 'Cinzel', serif;
+}
+
+.hot__item-text {
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #9F9F9F;
+}
+
+.hot__item-price {
+    color: pink;
+}
+
+.btn {
+    color: pink;
+    font-family: 'Poppins', sans-serif;
+}
+
+.meta__info-txt {
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #9F9F9F;
+}
+
+.footer__mail-text {
+    font-family: 'Bebas Neue', cursive;
+}
+
+.footer__mail-subtext {
+    font-family: 'Cinzel', serif;
+}
