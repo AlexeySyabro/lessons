@@ -1,0 +1,38 @@
+.sales {
+    display: flex;
+    margin-top: 64px;
+    margin-bottom: 97px;
+}
+
+.sales__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.sales__item {
+    position: relative;
+}
+
+.sales__sub {
+    position: absolute;
+    top: 105px;
+    left: 140px;
+}
+
+.sales__sub-more {
+    position: absolute;
+    top: 65px;
+    left: 530px;
+}
+
+.sales__item-title {
+    font-family: 'Cinzel', serif;
+    color: pink;
+}
+
+.sales__text {
+    font-family: 'Cinzel', serif;
+    font-size: 10px;
+    color: white;
+}

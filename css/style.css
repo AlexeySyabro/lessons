@@ -2,6 +2,8 @@
     --black: #222222;
     --light-pink: #F1E4E6;
     --dark-pink: #F16D7F;
+    --coffe: #faf3f4;
+
 }
 
 .page {
@@ -75,10 +77,50 @@
 
 .header {
     background-color: var(--black);
+
 }
 
 .header__nav {
+    position: absolute;
+    background-color: #FFFFFF;
+    right: 0;
+    bottom: -620px;
     display: none;
+    z-index: 2;
+}
+
+.header__nav--show {
+    display: block;
+}
+
+.header__nav-title {
+    font-family: 'Bebas Neue', cursive;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    padding-top: 34px;
+    padding-left: 37px;
+}
+
+.menu-item__title {
+    font-family: 'Cinzel', serif;
+    color: pink;
+    padding-top: 20px;
+    padding-bottom: 12px;
+    padding-left: 33px;
+}
+
+.menu-item__sub-item {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+    padding-left: 54px;
+    padding-bottom: 11px;
+    padding-right: 40px;
 }
 
 .header__wrp {
@@ -86,6 +128,7 @@
     justify-content: space-between;
     align-items: center;
     min-height: 75px;
+    position: relative;
 }
 
 .header__logo {
@@ -99,6 +142,13 @@
 .header__menu-btn {
     border: none;
     background-color: transparent;
+}
+
+.header__menu-btn:hover,
+.header__menu-btn:focus {
+    cursor: pointer;
+    outline: none;
+    opacity: 0.5;
 }
 
 .brand {
@@ -144,6 +194,8 @@
 
 .sales {
     display: flex;
+    margin-top: 64px;
+    margin-bottom: 97px;
 }
 
 .sales__list {
@@ -152,6 +204,21 @@
     flex-wrap: wrap;
 }
 
+.sales__item {
+    position: relative;
+}
+
+.sales__sub {
+    position: absolute;
+    top: 105px;
+    left: 140px;
+}
+
+.sales__sub-more {
+    position: absolute;
+    top: 65px;
+    left: 530px;
+}
 
 .sales__item-title {
     font-family: 'Cinzel', serif;
@@ -161,6 +228,7 @@
 .sales__text {
     font-family: 'Cinzel', serif;
     font-size: 10px;
+    color: white;
 }
 
 .hot {
@@ -181,13 +249,14 @@
 .hot__slogan {
     display: flex;
     justify-content: center;
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Lato', sans-serif;
     margin-top: 16px;
     color: #9F9F9F;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 17px;
+    margin-bottom: 48px;
 }
 
 .hot__list {
@@ -200,12 +269,40 @@
     width: 360px;
 }
 
+.hot__item-wrp {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hot__item-overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 0;
+    display: none;
+}
+
+.hot__item-button {
+    position: absolute;
+    display: none;
+}
+
+.hot__item-wrp:hover .hot__item-button,
+.hot__item-wrp:hover .hot__item-overlay {
+    display: block;
+}
+
 .hot__item-title {
     font-family: 'Cinzel', serif;
+    margin-top: 25px;
+    margin-bottom: 12px;
 }
 
 .hot__item-text {
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Lato', sans-serif;
     color: #9F9F9F;
     font-style: normal;
     font-weight: 300;
@@ -215,12 +312,14 @@
 
 .hot__item-price {
     color: pink;
+    margin-top: 18px;
+    margin-bottom: 50px;
 }
 
 .btn {
     color: pink;
     font-family: 'Poppins', sans-serif;
-    padding: 14px 38px 14px 38px;
+    padding: 15px;
     text-decoration: none;
     font-style: normal;
     font-weight: normal;
@@ -228,6 +327,8 @@
     line-height: 19px;
     display: flex;
     justify-content: center;
+    margin-bottom: 95px;
+    border: 2px solid #FF6A6A;
 
 }
 
@@ -242,11 +343,33 @@
 .meta__info-item {
     width: 360px;
     height: 134px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.meta__info-photo {
+    margin-bottom: 20px;
+}
+
+.meta__info-cpt {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19.96px;
+    line-height: 24px;
+    color: #FBFBFB;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 .meta__info-txt {
-    font-family: 'Open Sans Condensed', sans-serif;
-    color: #9F9F9F;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13.972px;
+    line-height: 17px;
+    text-align: center;
+    color: #FBFBFB;
 }
 
 .footer__photo {
@@ -259,8 +382,9 @@
 
 .footer__sub-photo {
     position: absolute;
-    bottom: 150px;
+    bottom: 350px;
     left: 215px;
+    border-radius: 50px;
 }
 
 .footer__sub-text {
@@ -269,7 +393,7 @@
     font-weight: normal;
     font-size: 20px;
     line-height: 24px;
-    bottom: 40px;
+    bottom: 220px;
     left: 80px;
     width: 360px;
     height: 100px;
@@ -295,7 +419,7 @@
 .footer__mail__text {
     font-family: 'Bebas Neue', cursive;
     position: absolute;
-    bottom: 120px;
+    bottom: 300px;
     left: 800px;
     font-style: normal;
     font-weight: bold;
@@ -303,7 +427,7 @@
     line-height: 167.2%;
     width: 360px;
     height: 142px;
-    
+
 }
 
 .footer__mail__subtext {
@@ -318,7 +442,7 @@
     padding-left: 15px;
     position: absolute;
     left: 800px;
-    bottom: 100px;
+    bottom: 270px;
     background: #E1E1E1;
     border: none;
 }
@@ -339,10 +463,24 @@
     text-align: center;
     position: absolute;
     left: 1030px;
-    bottom: 100px;
+    bottom: 270px;
 }
 
 .footer__social {
     display: flex;
     padding-bottom: 23px;
+}
+
+.registration__title {
+    font-family: 'Cinzel', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    background-color: var(--coffe);
+    color: pink;
+    height: 148px;
+    display: flex;
+    align-items: center;
+    padding-left: 230px;
 }
