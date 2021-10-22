@@ -1,0 +1,40 @@
+.brand {
+    display: flex;
+}
+
+.brand__wrp {
+    background-color: var(--light-pink);
+    flex-grow: 1;
+    padding: 0 0 0 92px;
+    display: flex;
+    align-items: center;
+}
+
+.brand__title {
+    font-family: Lato;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 58px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.brand__title::before {
+    height: 92px;
+    width: 12px;
+    background-color: var(--dark-pink);
+    content: '';
+    position: absolute;
+    left: -40px;
+    top: 15px;
+}
+
+.brand__subtitle {
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+}
+
+.brand__subtitle-pink {
+    font-family: 'Poppins', sans-serif;
+    color: pink;
+}
