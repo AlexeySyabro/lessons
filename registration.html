@@ -71,60 +71,99 @@
             <h1 class="registration__title"><b>registration</b></h1>
         </section>
         <section class="user container">
+            <h2 class="visually-hidden"></h2>
+            <form action="">
+        <div class="user__block">
             <ul class="user__fio">
                 <h2 class="user__name">Your Name</h2>
-                <li class="user__name-text"><input type="text" placeholder="First Name"></li>
-                <li class="user__name-text"><input type="text" placeholder="Last Name"></li>
+            <li class="user__name-text">
+                <label>
+                    <input class="user__name-first" type="text" placeholder="First Name">
+                    <span class="visually-hidden">First Name</span>
+                </label>
+            </li>
+            <li class="user__name-text">
+                <label>
+                    <input class="user__name-last" type="text" placeholder="Last Name">
+                    <span class="visually-hidden">Last Name</span>
+                </label>
+            </li>
             </ul>
             <ul class="user__gender">
-                <li class="user__gender-item"><button type="button"><img src="./img/Ellipse .svg" alt="male"></button>Male</li>
-                <li class="user__gender-item"><button type="button"><img src="./img/Ellipse .svg" alt="female"></button>Female</li>
+                <li class="user__gender-item">
+                    <label>
+                    <p><input class="usre__gender-man" name="gen" type="radio" value="man">Male</p>
+                    <span class="visually-hidden">Male</span>
+                    </label>
+                </li>
+                <li class="user__gender-item">
+                    <label>
+                    <p><input class="user__gender-woman" name="gen" type="radio" value="woman">Female</p>
+                    <span class="visually-hidden">Female</span>
+                    </label>
+                </li>
             </ul>
             <ul class="user__email">
                 <h2 class="user__email-text">Login details</h2>
-                <li class="user__email-item"><input type="email" placeholder="Email"></li>
-                <li class="user__email-item"><input type="password" placeholder="Password"></li>
-            </ul>
+                <li class="user__email-item">
+                    <label>
+                        <input class="user__email-address" type="email" placeholder="Email">
+                        <span class="visually-hidden">Email</span>
+                    </label>
+                </li>
+                <li class="user__email-item">
+                    <label>
+                        <input class="user__email-pas" type="password" placeholder="Password">
+                        <span class="visually-hidden">Password</span>
+                    </label>
+                </li>
+            </ul>       
             <h2 class="title">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</h2>
             <button class="title__button" type="submit">join now</button>
+        </div>
+        <div class="user__block-info">
             <ul class="desc">
                 <h2 class="desc__title">loyalty has its perks</h2>
                 <p class="desc__text">Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:</p>
                 <li class="desc__item">
-                    <img src="./img/Vector.svg" alt="photo">
                     <p class="desc__subtext">15% off welcome offer</p>
                 </li>
                 <li class="desc__item">
-                    <img src="./img/Vector.svg" alt="photo">
                     <p class="desc__subtext">Free shipping, returns and exchanges on all orders</p>
                 </li>
                 <li class="desc__item">
-                    <img src="./img/Vector.svg" alt="photo">
                     <p class="desc__subtext">$10 off a purchase on your birthday</p>
                 </li>
                 <li class="desc__item">
-                    <img src="./img/Vector.svg" alt="photo">
                     <p class="desc__subtext">Early access to products</p>
                 </li>
                 <li class="desc__item">
-                    <img src="./img/Vector.svg" alt="photo">
                     <p class="desc__subtext">Exclusive offers & rewards</p>
                 </li>
             </ul>
+        </div>
+        </form>
         </section>
     </main>
     <footer class="footer">
-        <h2 class="visually-hidden">footer</h2>
-        <img class="footer__photo" src="./img/photo-footer.jpg" alt="photo" >
-        <div class="footer__bcg container">  
-                <img class="footer__sub-photo" src="./img/girl.jpg" alt="girl">
-                <p class="footer__sub-text">“Vestibulum quis porttitor dui! Quisque <span>viverra nunc mi, a pulvinar purus condimentum“</span></p>
-                <h3 class="footer__mail__text">subscribe 
-                    <span class="footer__mail__subtext">for our newletter and promotion</span>
-                </h3>
-                <input class="field" type="email" placeholder="Enter Your Email">
-                <button class="send" type="submit">Subscribe</button>   
-        </div>
+        <h2 class="visually-hidden">footer</h2>    
+            <ul class="footer__list container">
+                <li class="footer__list-text">
+                    <img class="footer__sub-photo" src="./img/girl.jpg" alt="girl">
+                    <p class="footer__sub-text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“</p>
+                </li>
+                <li class="footer__list-item">
+                    <h3 class="footer__mail-text">subscribe</h3>
+                    <p class="footer__mail-subtext">for our newletter and promotion</p>
+                <form action="">
+                    <label>
+                        <input class="field" type="email" placeholder="Enter Your Email">
+                        <span class="visually-hidden">Enter Your Email</span>
+                    </label>
+                    <button class="send" type="submit">Subscribe</button> 
+                </form>
+                </li>
+            </ul>      
         <div class="footer__copy">      
             <p class="footer__copy-item">&copy; 2021  Brand  All Rights Reserved.</p>
             <ul class="footer__social">
