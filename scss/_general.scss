@@ -22,3 +22,15 @@
     border: 0;
     clip: rect(0 0 0 0)
 }
+
+@media (max-width: 1599px) {
+    .container {
+        width: 736px;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        width: 343px;
+    }
+}

@@ -75,7 +75,7 @@
         </section>
         <section class="sales container">
             <h2 class="sales__heading visually-hidden">Sales</h2>
-            <ul class="sales__list">
+            <ul class="sales__list container">
                 <li class="sales__item">
                     <img class="sales__photo" src="./img/woman-sales.jpg" alt="sales">
                     <div class="sales__sub">
@@ -169,7 +169,7 @@
             </ul>
             <a href="#"class="btn">Browse All Product</a>
         </section>
-        <section class="meta">
+        <section class="meta container">
             <h2 class="visually-hidden">pool</h2>
             <ul class="meta__info">
                 <li class="meta__info-item">
@@ -194,17 +194,24 @@
         </section>
     </main>
     <footer class="footer">
-        <h2 class="visually-hidden">footer</h2>
-        <img class="footer__photo" src="./img/photo-footer.jpg" alt="photo" >
-        <div class="footer__bcg container">  
-                <img class="footer__sub-photo" src="./img/girl.jpg" alt="girl">
-                <p class="footer__sub-text">“Vestibulum quis porttitor dui! Quisque <span>viverra nunc mi, a pulvinar purus condimentum“</span></p>
-                <h3 class="footer__mail__text">subscribe 
-                    <span class="footer__mail__subtext">for our newletter and promotion</span>
-                </h3>
-                <input class="field" type="email" placeholder="Enter Your Email">
-                <button class="send" type="submit">Subscribe</button>   
-        </div>
+        <h2 class="visually-hidden">footer</h2>    
+            <ul class="footer__list container">
+                <li class="footer__list-text">
+                    <img class="footer__sub-photo" src="./img/girl.jpg" alt="girl">
+                    <p class="footer__sub-text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“</p>
+                </li>
+                <li class="footer__list-item">
+                    <h3 class="footer__mail-text">subscribe</h3>
+                    <p class="footer__mail-subtext">for our newletter and promotion</p>
+                <form action="">
+                    <label>
+                        <input class="field" type="email" placeholder="Enter Your Email">
+                        <span class="visually-hidden">Enter Your Email</span>
+                    </label>
+                    <button class="send" type="submit">Subscribe</button> 
+                </form>
+                </li>
+            </ul>      
         <div class="footer__copy">      
             <p class="footer__copy-item">&copy; 2021  Brand  All Rights Reserved.</p>
             <ul class="footer__social">
