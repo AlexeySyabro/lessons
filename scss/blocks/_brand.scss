@@ -3,7 +3,7 @@
 }
 
 .brand__wrp {
-    background-color: var(--light-pink);
+    background-color: $light-pink;
     flex-grow: 1;
     padding: 0 0 0 92px;
     display: flex;
@@ -22,7 +22,7 @@
 .brand__title::before {
     height: 92px;
     width: 12px;
-    background-color: var(--dark-pink);
+    background-color: $dark-pink;
     content: '';
     position: absolute;
     left: -40px;

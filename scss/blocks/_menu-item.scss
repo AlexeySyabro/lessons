@@ -17,3 +17,11 @@
     padding-bottom: 11px;
     padding-right: 40px;
 }
+
+.menu-item__sub-item:hover,
+.menu-item__sub-item:focus,
+.menu-item__sub-item:active {
+    opacity: 0.5;
+    cursor: pointer;
+    outline: none;
+}

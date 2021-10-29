@@ -1,6 +1,19 @@
 .header {
-    background-color: var(--black);
+    background-color: $black;
 
+}
+
+.header__search:hover,
+.header__search:focus {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.header__link:hover,
+.header__link:focus {
+    cursor: pointer;
+    outline: none;
+    opacity: 0.5;
 }
 
 .header__nav {
@@ -24,26 +37,6 @@
     line-height: 17px;
     padding-top: 34px;
     padding-left: 37px;
-}
-
-.menu-item__title {
-    font-family: 'Cinzel', serif;
-    color: pink;
-    padding-top: 20px;
-    padding-bottom: 12px;
-    padding-left: 33px;
-}
-
-.menu-item__sub-item {
-    font-family: 'Lato', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 17px;
-    color: #6F6E6E;
-    padding-left: 54px;
-    padding-bottom: 11px;
-    padding-right: 40px;
 }
 
 .header__wrp {

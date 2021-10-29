@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <link rel="stylesheet" href="./scss/style.css">
+    <link rel="stylesheet" href="index.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> 
+</head>
+<body class="page">
+    <header class="header">
+        <div class="container header__wrp">
+    <div class=" header__wrp-controls">
+        <img class="header__logo" src="./img/logo-link.svg" alt="logo">
+        <img class="header__search" src="./img/loupe.svg" alt="search">
+    </div>
+    <div class=" header__wrp-controls">
+        <button class="header__menu-btn" type="button" id="burger"><img src="./img/burger.svg" alt="burger"></button>
+        <a class="header__link" href="#"><img src="./img/people.svg" alt="person"></a>
+        <a class="header__link" href="#"><img src="./img/basket.svg" alt="card"></a>
+    </div>
+        <nav class="header__nav" id="menu">
+            <h2 class="header__nav-title">
+                menu
+            </h2>
+            <ul class="header__menu-list">
+                <li class="header__menu-item menu-item">
+                    <h3 class="menu-item__title">man</h3>
+                    <ul class="menu-item__sub-list">
+                        <a href="#"><li class="menu-item__sub-item">Accessories</li></a>
+                        <a href="#"><li class="menu-item__sub-item">Bags</li></a>
+                        <a href="#"><li class="menu-item__sub-item">Denim</li></a>
+                        <a href="#"><li class="menu-item__sub-item">T-Shirts</li></a>
+                    </ul>
+                </li>
+                <li class="header__menu-item menu-item">
+                    <h3 class="menu-item__title">woman</h3>
+                    <ul class="menu-item__sub-list">
+                        <a href="#"><li class="menu-item__sub-item">Accessories</li></a>
+                        <a href="#"><li class="menu-item__sub-item">Jackets & Coats</li></a>
+                        <a href="#"><li class="menu-item__sub-item">Polos</li></a>
+                        <a href="#"><li class="menu-item__sub-item">T-Shirts</li></a>
+                        <a href="#"><li class="menu-item__sub-item">Shirts</li></a>
+                    </ul>
+                </li>
+                <li class="header__menu-item menu-item">
+                    <h3 class="menu-item__title">kids</h3>
+                    <ul class="menu-item__sub-list">
+                        <a href="#"><li class="menu-item__sub-item">Accessories</li></a>
+                        <a href="#"><li class="menu-item__sub-item">Jackets & Coats</li></a>
+                        <a href="#"><li class="menu-item__sub-item">Polos</li></a>
+                        <a href="#"><li class="menu-item__sub-item">T-Shirts</li></a>
+                        <a href="#"><li class="menu-item__sub-item">Shirts</li></a>
+                        <a href="#"><li class="menu-item__sub-item">Bags</li></a>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+    <main>
+        <section class="shopping">
+            <h1 class="shopping__title"><b>shopping cart</b></h1>
+        </section>
+    </main>
+    <footer class="footer">
+        <h2 class="visually-hidden">footer</h2>    
+            <ul class="footer__list container">
+                <li class="footer__list-text">
+                    <img class="footer__sub-photo" src="./img/girl.jpg" alt="girl">
+                    <p class="footer__sub-text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“</p>
+                </li>
+                <li class="footer__list-item">
+                    <h3 class="footer__mail-text">subscribe</h3>
+                    <p class="footer__mail-subtext">for our newletter and promotion</p>
+                <form action="">
+                    <label>
+                        <input class="field" type="email" placeholder="Enter Your Email">
+                        <span class="visually-hidden">Enter Your Email</span>
+                    </label>
+                    <button class="send" type="submit">Subscribe</button> 
+                </form>
+                </li>
+            </ul>      
+        <div class="footer__copy">      
+            <p class="footer__copy-item">&copy; 2021  Brand  All Rights Reserved.</p>
+            <ul class="footer__social">
+                <li class="footer__social-item">
+                   <a class="footer__social-link" href="https://www.facebook.com/">
+                    <img src="./img/facebook.jpg" alt="facebook">
+                   </a> 
+                </li>
+                <li class="footer__social-item">
+                    <a class="footer__social-link" href="https://www.instagram.com/?hl=ru">
+                    <img src="./img/instagram.jpg" alt="instagram">
+                    </a>
+                </li>
+                <li class="footer__social-item">
+                    <a class="footer__social-link" href="https://www.pinterest.ru/?autologin=true">
+                    <img src="./img/pint.jpg" alt="pint">
+                    </a>
+                </li>
+                <li class="footer__social-item">
+                   <a class="footer__social-link" href="https://twitter.com/?lang=ru">
+                    <img src="./img/twitter.jpg" alt="twitter">
+                   </a>
+                </li>
+            </ul>               
+        </div>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>

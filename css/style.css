@@ -119,6 +119,15 @@
         min-height: 111px;
         max-width: 100%;
     }
+
+    form {
+        flex-direction: column;
+    }
+}
+
+.header {
+    background-color: var(--black);
+
 }
 
 .header__search:hover,
@@ -132,36 +141,6 @@
     cursor: pointer;
     outline: none;
     opacity: 0.5;
-}
-
-.btn:hover,
-.btn:focus {
-    opacity: 0.5;
-    cursor: pointer;
-    outline: none;
-}
-
-.btn:active {
-    opacity: 0.7;
-}
-
-.field:active,
-.field:hover,
-.field:focus {
-    outline: 1px solid red;
-}
-
-.send:active,
-.send:hover,
-.send:focus {
-    opacity: 0.5;
-    cursor: pointer;
-    outline: none;
-}
-
-.header {
-    background-color: var(--black);
-
 }
 
 .header__nav {
@@ -185,34 +164,6 @@
     line-height: 17px;
     padding-top: 34px;
     padding-left: 37px;
-}
-
-.menu-item__title {
-    font-family: 'Cinzel', serif;
-    color: pink;
-    padding-top: 20px;
-    padding-bottom: 12px;
-    padding-left: 33px;
-}
-
-.menu-item__sub-item {
-    font-family: 'Lato', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 17px;
-    color: #6F6E6E;
-    padding-left: 54px;
-    padding-bottom: 11px;
-    padding-right: 40px;
-}
-
-.menu-item__sub-item:hover,
-.menu-item__sub-item:focus,
-.menu-item__sub-item:active {
-    opacity: 0.5;
-    cursor: pointer;
-    outline: none;
 }
 
 .header__wrp {
@@ -241,6 +192,34 @@
     cursor: pointer;
     outline: none;
     opacity: 0.5;
+}
+
+.menu-item__title {
+    font-family: 'Cinzel', serif;
+    color: pink;
+    padding-top: 20px;
+    padding-bottom: 12px;
+    padding-left: 33px;
+}
+
+.menu-item__sub-item {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+    padding-left: 54px;
+    padding-bottom: 11px;
+    padding-right: 40px;
+}
+
+.menu-item__sub-item:hover,
+.menu-item__sub-item:focus,
+.menu-item__sub-item:active {
+    opacity: 0.5;
+    cursor: pointer;
+    outline: none;
 }
 
 .brand {
@@ -433,6 +412,17 @@
 
 }
 
+.btn:hover,
+.btn:focus {
+    opacity: 0.5;
+    cursor: pointer;
+    outline: none;
+}
+
+.btn:active {
+    opacity: 0.7;
+}
+
 .meta__info {
     background-color: var(--black);
     display: flex;
@@ -580,6 +570,20 @@ form {
     text-align: center;
 }
 
+.field:active,
+.field:hover,
+.field:focus {
+    outline: 1px solid red;
+}
+
+.send:active,
+.send:hover,
+.send:focus {
+    opacity: 0.5;
+    cursor: pointer;
+    outline: none;
+}
+
 .footer__social {
     display: flex;
     padding-bottom: 23px;
@@ -658,6 +662,11 @@ form {
     padding-left: 13px;
 }
 
+.user__block-info {
+    margin-left: 130px;
+    margin-top: 64px;
+}
+
 .title {
     font-family: 'Lato', sans-serif;
     font-style: normal;
@@ -688,11 +697,6 @@ form {
     opacity: 0.5;
     cursor: pointer;
     outline: none;
-}
-
-.user__block-info {
-    margin-left: 130px;
-    margin-top: 64px;
 }
 
 .desc__title {
