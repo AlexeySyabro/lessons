@@ -12,18 +12,27 @@
 
 .sales__item {
     position: relative;
+    min-height: 260px;
+    min-width: 32%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+.sales__photo-more {
+    width: 100%;
+    padding-top: 30px;
+}
+
 
 .sales__sub {
     position: absolute;
     top: 105px;
-    left: 140px;
 }
 
 .sales__sub-more {
     position: absolute;
     top: 65px;
-    left: 530px;
 }
 
 .sales__item-title {

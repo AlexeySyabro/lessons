@@ -1,0 +1,138 @@
+.user__fio {
+    margin-top: 64px;
+}
+
+.user__name {
+    margin-bottom: 20px;
+}
+
+.user__name-text {
+    margin-bottom: 21px;
+}
+
+.user__name-text:hover,
+.user__name-text:focus {
+    outline: 1px solid red;
+}
+
+.user__name-first {
+    width: 360px;
+    height: 50px;
+    padding-left: 13px;
+}
+
+.user__name-last {
+    width: 360px;
+    height: 50px;
+    padding-left: 13px;
+}
+
+.user__gender {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.user__email-text {
+    margin-bottom: 20px;
+}
+
+.user__email-item {
+    margin-bottom: 21px;
+}
+
+.user__email-item:focus,
+.user__email-item:hover {
+    outline: 1px solid red;
+}
+
+.user__email-address {
+    width: 360px;
+    height: 50px;
+    padding-left: 13px;
+}
+
+.user__email-pas {
+    width: 360px;
+    height: 50px;
+    padding-left: 13px;
+}
+
+.user__block-info {
+    margin-left: 130px;
+    margin-top: 64px;
+}
+
+.title {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+    margin-bottom: 39px;
+}
+
+.title__button {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    border: none;
+    background: #F16D7F;
+    text-transform: uppercase;
+    width: 167px;
+    height: 50px;
+}
+
+.title__button:hover,
+.title__button:focus,
+.title__button:active {
+    opacity: 0.5;
+    cursor: pointer;
+    outline: none;
+}
+
+.desc__title {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+}
+
+.desc__text {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 22px;
+}
+
+.desc__subtext {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    position: relative;
+}
+
+.desc__subtext::before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 5px;
+    left: -25px;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Light_green_check.svg/1200px-Light_green_check.svg.png);
+    background-size: 15px 15px;
+}
+
+.desc__item {
+    margin-bottom: 16px;
+}
