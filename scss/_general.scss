@@ -23,6 +23,10 @@
     clip: rect(0 0 0 0)
 }
 
+#only {
+    display: flex;
+}
+
 @media (max-width: 1599px) {
     .container {
         width: 96%;
@@ -110,9 +114,5 @@
     .sales__photo-more {
         min-height: 111px;
         max-width: 100%;
-    }
-
-    form {
-        flex-direction: column;
     }
 }
