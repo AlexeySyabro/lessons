@@ -72,23 +72,36 @@
         <section class="goods container">
             <h2 class="visually-hidden"></h2>
             <form action="">
+                <div class="goods__all">
                 <div class="goods__item">
                     <ul class="goods__item-list">
                         <li class="goods__item-product">
-                            <img class="goods__item-photo" src="./img/Shopping Cart-1.jpg" alt="photo">
-                            <h2 class="goods__item-title">mango  people  t-shirt</h2>
-                            <p class="goods__item-text">Price: $300</p>
-                            <p class="goods__item-text">Color: Red</p>
-                            <p class="goods__item-text">Size: Xl</p>
-                            <p class="goods__item-text">Quantity:</p>
+                            <ul class="goods__item-sublist">
+                                <li>
+                                    <img class="goods__item-photo" src="./img/Shopping Cart-1.jpg" alt="photo">
+                                </li>
+                                <li class="goods__item-subproduct">
+                                    <h2 class="goods__item-title">mango  people  t-shirt</h2>
+                                    <p class="goods__item-text">Price: $300</p>
+                                    <p class="goods__item-text">Color: Red</p>
+                                    <p class="goods__item-text">Size: Xl</p>
+                                    <p class="goods__item-text">Quantity:</p>
+                                </li>
+                            </ul>
                         </li>
-                        <li  class="goods__item-product">
-                            <img class="goods__item-photo" src="./img/Shopping Cart-2.jpg" alt="photo">
-                            <h2 class="goods__item-title">mango  people  t-shirt</h2>
-                            <p class="goods__item-text">Price: $300</p>
-                            <p class="goods__item-text">Color: Red</p>
-                            <p class="goods__item-text">Size: Xl</p>
-                            <p class="goods__item-text">Quantity:</p>
+                        <li  class="goods__item-benefits">
+                            <ul class="goods__item-sublist">
+                                <li>
+                                    <img class="goods__item-photo" src="./img/Shopping Cart-2.jpg" alt="photo">
+                                </li>
+                                <li class="goods__item-subproduct">
+                                    <h2 class="goods__item-title">mango  people  t-shirt</h2>
+                                    <p class="goods__item-text">Price: $300</p>
+                                    <p class="goods__item-text">Color: Red</p>
+                                    <p class="goods__item-text">Size: Xl</p>
+                                    <p class="goods__item-text">Quantity:</p>
+                                </li>
+                            </ul>
                         </li>
                     </ul>
                             <button class="goods__button" type="submit">clear shopping cart</button>
@@ -131,6 +144,7 @@
                         </li>
                     </ul>
                 </div>
+            </div>
             </form>
         </section>
     </main>
@@ -144,7 +158,7 @@
                 <li class="footer__list-item">
                     <h3 class="footer__mail-text">subscribe</h3>
                     <p class="footer__mail-subtext">for our newletter and promotion</p>
-                <form action="">
+                <form id="only" action="">
                     <label>
                         <input class="field" type="email" placeholder="Enter Your Email">
                         <span class="visually-hidden">Enter Your Email</span>

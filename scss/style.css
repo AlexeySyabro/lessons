@@ -71,6 +71,10 @@ table {
   clip: rect(0 0 0 0);
 }
 
+#only {
+  display: flex;
+}
+
 @media (max-width: 1599px) {
   .container {
     width: 96%;
@@ -155,10 +159,6 @@ table {
   .sales__photo-more {
     min-height: 111px;
     max-width: 100%;
-  }
-
-  form {
-    flex-direction: column;
   }
 }
 .header {
@@ -571,10 +571,6 @@ table {
   text-transform: uppercase;
 }
 
-form {
-  display: flex;
-}
-
 .field {
   box-sizing: border-box;
   border-radius: 20px 0 0 20px;
@@ -698,7 +694,7 @@ form {
   margin-top: 64px;
 }
 
-.title {
+.user__title {
   font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -708,7 +704,7 @@ form {
   margin-bottom: 39px;
 }
 
-.title__button {
+.user__title__button {
   font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -722,15 +718,15 @@ form {
   height: 50px;
 }
 
-.title__button:hover,
-.title__button:focus,
-.title__button:active {
+.user__title__button:hover,
+.user__title__button:focus,
+.user__title__button:active {
   opacity: 0.5;
   cursor: pointer;
   outline: none;
 }
 
-.desc__title {
+.user__desc__title {
   font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -740,7 +736,7 @@ form {
   margin-bottom: 22px;
 }
 
-.desc__text {
+.user__desc__text {
   font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -749,7 +745,7 @@ form {
   margin-bottom: 22px;
 }
 
-.desc__subtext {
+.user__desc__subtext {
   font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -758,7 +754,7 @@ form {
   position: relative;
 }
 
-.desc__subtext::before {
+.user__desc__subtext::before {
   content: "";
   width: 15px;
   height: 15px;
@@ -769,7 +765,7 @@ form {
   background-size: 15px 15px;
 }
 
-.desc__item {
+.user__desc__item {
   margin-bottom: 16px;
 }
 
@@ -785,6 +781,56 @@ form {
   display: flex;
   align-items: center;
   padding-left: 230px;
+}
+
+.goods__all {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.goods__item-title {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.goods__item-text {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+  color: #575757;
+}
+
+.goods__item-product {
+  margin-top: 96px;
+  margin-bottom: 40px;
+}
+
+.goods__item-benefits {
+  margin-bottom: 72px;
+}
+
+.goods__item-sublist {
+  width: 652px;
+  height: 306px;
+  display: flex;
+  box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
+}
+
+.goods__item-subproduct {
+  padding-left: 31px;
+}
+
+.goods__item-title {
+  padding-top: 22px;
+  padding-bottom: 42px;
 }
 
 /*# sourceMappingURL=style.css.map */

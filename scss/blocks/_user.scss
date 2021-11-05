@@ -62,7 +62,7 @@
     margin-top: 64px;
 }
 
-.title {
+.user__title {
     font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: 300;
@@ -72,7 +72,7 @@
     margin-bottom: 39px;
 }
 
-.title__button {
+.user__title__button {
     font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -86,15 +86,15 @@
     height: 50px;
 }
 
-.title__button:hover,
-.title__button:focus,
-.title__button:active {
+.user__title__button:hover,
+.user__title__button:focus,
+.user__title__button:active {
     opacity: 0.5;
     cursor: pointer;
     outline: none;
 }
 
-.desc__title {
+.user__desc__title {
     font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: 300;
@@ -104,7 +104,7 @@
     margin-bottom: 22px;
 }
 
-.desc__text {
+.user__desc__text {
     font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: 300;
@@ -113,7 +113,7 @@
     margin-bottom: 22px;
 }
 
-.desc__subtext {
+.user__desc__subtext {
     font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: 300;
@@ -122,7 +122,7 @@
     position: relative;
 }
 
-.desc__subtext::before {
+.user__desc__subtext::before {
     content: '';
     width: 15px;
     height: 15px;
@@ -133,6 +133,6 @@
     background-size: 15px 15px;
 }
 
-.desc__item {
+.user__desc__item {
     margin-bottom: 16px;
 }
